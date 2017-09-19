@@ -3,6 +3,10 @@
     Dim adminControls As MainControl
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If Not App.database.tryConnect Then
+            MessageBox.Show("Database Connection Failed")
+            Application.Exit()
+        End If
         adminControls = New MainControl()
         pbLogo.SizeMode = PictureBoxSizeMode.StretchImage
     End Sub

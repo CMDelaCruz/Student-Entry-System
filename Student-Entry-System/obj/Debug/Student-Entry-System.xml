@@ -32,5 +32,10 @@ Student-Entry-System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Student_Entry_System.My.Resources.Resources.ID_Card_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>

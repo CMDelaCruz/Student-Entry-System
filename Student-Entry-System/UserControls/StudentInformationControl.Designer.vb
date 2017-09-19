@@ -22,10 +22,10 @@ Partial Class StudentInformationControl
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.studentTable = New System.Windows.Forms.DataGridView()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtSearch = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.rbFemale = New System.Windows.Forms.RadioButton()
         Me.rbMale = New System.Windows.Forms.RadioButton()
@@ -37,13 +37,13 @@ Partial Class StudentInformationControl
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnBrowse = New System.Windows.Forms.Button()
         Me.cbYear = New System.Windows.Forms.ComboBox()
-        Me.tbAddress = New System.Windows.Forms.TextBox()
-        Me.tbSection = New System.Windows.Forms.TextBox()
-        Me.tbCourse = New System.Windows.Forms.TextBox()
-        Me.tbMiddleName = New System.Windows.Forms.TextBox()
-        Me.tbFirstName = New System.Windows.Forms.TextBox()
-        Me.tbLastName = New System.Windows.Forms.TextBox()
-        Me.tbStudentNo = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtSection = New System.Windows.Forms.TextBox()
+        Me.txtCourse = New System.Windows.Forms.TextBox()
+        Me.txtMiddleName = New System.Windows.Forms.TextBox()
+        Me.txtFirstName = New System.Windows.Forms.TextBox()
+        Me.txtLastName = New System.Windows.Forms.TextBox()
+        Me.txtStudentNo = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -51,28 +51,30 @@ Partial Class StudentInformationControl
         Me.Label6 = New System.Windows.Forms.Label()
         Me.studentPictureBox = New System.Windows.Forms.PictureBox()
         Me.btnEdit = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        CType(Me.studentPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.studentTable,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.Panel1.SuspendLayout
+        Me.Panel2.SuspendLayout
+        CType(Me.studentPictureBox,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
-        'DataGridView1
+        'studentTable
         '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(238, 519)
-        Me.DataGridView1.TabIndex = 0
+        Me.studentTable.AllowUserToAddRows = false
+        Me.studentTable.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.studentTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.studentTable.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.studentTable.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
+        Me.studentTable.Location = New System.Drawing.Point(0, 0)
+        Me.studentTable.Name = "studentTable"
+        Me.studentTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.studentTable.Size = New System.Drawing.Size(238, 519)
+        Me.studentTable.TabIndex = 0
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.SystemColors.Control
         Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Controls.Add(Me.DataGridView1)
+        Me.Panel1.Controls.Add(Me.studentTable)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Left
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
@@ -81,7 +83,7 @@ Partial Class StudentInformationControl
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.TextBox1)
+        Me.Panel2.Controls.Add(Me.txtSearch)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
@@ -89,18 +91,18 @@ Partial Class StudentInformationControl
         Me.Panel2.Size = New System.Drawing.Size(238, 23)
         Me.Panel2.TabIndex = 2
         '
-        'TextBox1
+        'txtSearch
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(59, 0)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(179, 23)
-        Me.TextBox1.TabIndex = 0
+        Me.txtSearch.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtSearch.Location = New System.Drawing.Point(59, 0)
+        Me.txtSearch.Name = "txtSearch"
+        Me.txtSearch.Size = New System.Drawing.Size(179, 23)
+        Me.txtSearch.TabIndex = 0
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.AutoSize = true
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Location = New System.Drawing.Point(4, 3)
         Me.Label1.Name = "Label1"
@@ -110,39 +112,39 @@ Partial Class StudentInformationControl
         '
         'rbFemale
         '
-        Me.rbFemale.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.rbFemale.AutoSize = True
-        Me.rbFemale.Enabled = False
+        Me.rbFemale.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.rbFemale.AutoSize = true
+        Me.rbFemale.Enabled = false
         Me.rbFemale.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rbFemale.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbFemale.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rbFemale.Location = New System.Drawing.Point(454, 173)
         Me.rbFemale.Name = "rbFemale"
         Me.rbFemale.Size = New System.Drawing.Size(66, 19)
         Me.rbFemale.TabIndex = 5
         Me.rbFemale.Text = "Female"
-        Me.rbFemale.UseVisualStyleBackColor = True
+        Me.rbFemale.UseVisualStyleBackColor = true
         '
         'rbMale
         '
-        Me.rbMale.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.rbMale.AutoSize = True
-        Me.rbMale.Checked = True
-        Me.rbMale.Enabled = False
+        Me.rbMale.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.rbMale.AutoSize = true
+        Me.rbMale.Checked = true
+        Me.rbMale.Enabled = false
         Me.rbMale.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.rbMale.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.rbMale.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.rbMale.Location = New System.Drawing.Point(395, 173)
         Me.rbMale.Name = "rbMale"
         Me.rbMale.Size = New System.Drawing.Size(52, 19)
         Me.rbMale.TabIndex = 4
-        Me.rbMale.TabStop = True
+        Me.rbMale.TabStop = true
         Me.rbMale.Text = "Male"
-        Me.rbMale.UseVisualStyleBackColor = True
+        Me.rbMale.UseVisualStyleBackColor = true
         '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = true
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label2.Location = New System.Drawing.Point(267, 243)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(64, 18)
@@ -151,9 +153,9 @@ Partial Class StudentInformationControl
         '
         'Label10
         '
-        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label10.AutoSize = true
+        Me.Label10.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label10.Location = New System.Drawing.Point(267, 103)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(96, 18)
@@ -162,9 +164,9 @@ Partial Class StudentInformationControl
         '
         'Label9
         '
-        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label9.AutoSize = true
+        Me.Label9.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label9.Location = New System.Drawing.Point(267, 68)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(88, 18)
@@ -173,9 +175,9 @@ Partial Class StudentInformationControl
         '
         'Label8
         '
-        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label8.AutoSize = true
+        Me.Label8.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label8.Location = New System.Drawing.Point(267, 138)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(80, 18)
@@ -185,26 +187,26 @@ Partial Class StudentInformationControl
         'btnDelete
         '
         Me.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnDelete.Enabled = False
-        Me.btnDelete.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDelete.Enabled = false
+        Me.btnDelete.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.btnDelete.Location = New System.Drawing.Point(711, 466)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(95, 29)
         Me.btnDelete.TabIndex = 13
         Me.btnDelete.Text = "Delete"
-        Me.btnDelete.UseVisualStyleBackColor = True
+        Me.btnDelete.UseVisualStyleBackColor = true
         '
         'btnCancel
         '
         Me.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnCancel.Enabled = False
-        Me.btnCancel.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnCancel.Enabled = false
+        Me.btnCancel.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.btnCancel.Location = New System.Drawing.Point(610, 466)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(95, 29)
         Me.btnCancel.TabIndex = 12
         Me.btnCancel.Text = "Cancel"
-        Me.btnCancel.UseVisualStyleBackColor = True
+        Me.btnCancel.UseVisualStyleBackColor = true
         '
         'btnBrowse
         '
@@ -212,101 +214,101 @@ Partial Class StudentInformationControl
         Me.btnBrowse.BackColor = System.Drawing.Color.Black
         Me.btnBrowse.FlatAppearance.BorderSize = 0
         Me.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBrowse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.btnBrowse.Location = New System.Drawing.Point(786, 30)
         Me.btnBrowse.Name = "btnBrowse"
         Me.btnBrowse.Size = New System.Drawing.Size(20, 20)
         Me.btnBrowse.TabIndex = 10
-        Me.btnBrowse.UseVisualStyleBackColor = False
+        Me.btnBrowse.UseVisualStyleBackColor = false
         '
         'cbYear
         '
-        Me.cbYear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.cbYear.Enabled = False
-        Me.cbYear.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cbYear.FormattingEnabled = True
+        Me.cbYear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.cbYear.Enabled = false
+        Me.cbYear.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.cbYear.FormattingEnabled = true
         Me.cbYear.Items.AddRange(New Object() {"1st", "2nd", "3rd", "4th", "5th"})
         Me.cbYear.Location = New System.Drawing.Point(395, 205)
         Me.cbYear.Name = "cbYear"
         Me.cbYear.Size = New System.Drawing.Size(67, 26)
         Me.cbYear.TabIndex = 6
         '
-        'tbAddress
+        'txtAddress
         '
-        Me.tbAddress.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbAddress.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbAddress.Location = New System.Drawing.Point(395, 310)
-        Me.tbAddress.Multiline = True
-        Me.tbAddress.Name = "tbAddress"
-        Me.tbAddress.ReadOnly = True
-        Me.tbAddress.Size = New System.Drawing.Size(236, 111)
-        Me.tbAddress.TabIndex = 9
+        Me.txtAddress.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtAddress.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtAddress.Location = New System.Drawing.Point(395, 310)
+        Me.txtAddress.Multiline = true
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.ReadOnly = true
+        Me.txtAddress.Size = New System.Drawing.Size(236, 111)
+        Me.txtAddress.TabIndex = 9
         '
-        'tbSection
+        'txtSection
         '
-        Me.tbSection.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbSection.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbSection.Location = New System.Drawing.Point(395, 240)
-        Me.tbSection.Name = "tbSection"
-        Me.tbSection.ReadOnly = True
-        Me.tbSection.Size = New System.Drawing.Size(189, 25)
-        Me.tbSection.TabIndex = 7
+        Me.txtSection.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtSection.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtSection.Location = New System.Drawing.Point(395, 240)
+        Me.txtSection.Name = "txtSection"
+        Me.txtSection.ReadOnly = true
+        Me.txtSection.Size = New System.Drawing.Size(189, 25)
+        Me.txtSection.TabIndex = 7
         '
-        'tbCourse
+        'txtCourse
         '
-        Me.tbCourse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbCourse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbCourse.Location = New System.Drawing.Point(395, 275)
-        Me.tbCourse.Name = "tbCourse"
-        Me.tbCourse.ReadOnly = True
-        Me.tbCourse.Size = New System.Drawing.Size(236, 25)
-        Me.tbCourse.TabIndex = 8
+        Me.txtCourse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtCourse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtCourse.Location = New System.Drawing.Point(395, 275)
+        Me.txtCourse.Name = "txtCourse"
+        Me.txtCourse.ReadOnly = true
+        Me.txtCourse.Size = New System.Drawing.Size(236, 25)
+        Me.txtCourse.TabIndex = 8
         '
-        'tbMiddleName
+        'txtMiddleName
         '
-        Me.tbMiddleName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbMiddleName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbMiddleName.Location = New System.Drawing.Point(395, 100)
-        Me.tbMiddleName.Name = "tbMiddleName"
-        Me.tbMiddleName.ReadOnly = True
-        Me.tbMiddleName.Size = New System.Drawing.Size(236, 25)
-        Me.tbMiddleName.TabIndex = 2
+        Me.txtMiddleName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtMiddleName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtMiddleName.Location = New System.Drawing.Point(395, 100)
+        Me.txtMiddleName.Name = "txtMiddleName"
+        Me.txtMiddleName.ReadOnly = true
+        Me.txtMiddleName.Size = New System.Drawing.Size(236, 25)
+        Me.txtMiddleName.TabIndex = 2
         '
-        'tbFirstName
+        'txtFirstName
         '
-        Me.tbFirstName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbFirstName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbFirstName.Location = New System.Drawing.Point(395, 65)
-        Me.tbFirstName.Name = "tbFirstName"
-        Me.tbFirstName.ReadOnly = True
-        Me.tbFirstName.Size = New System.Drawing.Size(236, 25)
-        Me.tbFirstName.TabIndex = 1
+        Me.txtFirstName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtFirstName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtFirstName.Location = New System.Drawing.Point(395, 65)
+        Me.txtFirstName.Name = "txtFirstName"
+        Me.txtFirstName.ReadOnly = true
+        Me.txtFirstName.Size = New System.Drawing.Size(236, 25)
+        Me.txtFirstName.TabIndex = 1
         '
-        'tbLastName
+        'txtLastName
         '
-        Me.tbLastName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbLastName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbLastName.Location = New System.Drawing.Point(395, 135)
-        Me.tbLastName.Name = "tbLastName"
-        Me.tbLastName.ReadOnly = True
-        Me.tbLastName.Size = New System.Drawing.Size(236, 25)
-        Me.tbLastName.TabIndex = 3
+        Me.txtLastName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtLastName.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtLastName.Location = New System.Drawing.Point(395, 135)
+        Me.txtLastName.Name = "txtLastName"
+        Me.txtLastName.ReadOnly = true
+        Me.txtLastName.Size = New System.Drawing.Size(236, 25)
+        Me.txtLastName.TabIndex = 3
         '
-        'tbStudentNo
+        'txtStudentNo
         '
-        Me.tbStudentNo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbStudentNo.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbStudentNo.Location = New System.Drawing.Point(395, 30)
-        Me.tbStudentNo.Name = "tbStudentNo"
-        Me.tbStudentNo.ReadOnly = True
-        Me.tbStudentNo.Size = New System.Drawing.Size(236, 25)
-        Me.tbStudentNo.TabIndex = 0
+        Me.txtStudentNo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.txtStudentNo.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txtStudentNo.Location = New System.Drawing.Point(395, 30)
+        Me.txtStudentNo.Name = "txtStudentNo"
+        Me.txtStudentNo.ReadOnly = true
+        Me.txtStudentNo.Size = New System.Drawing.Size(236, 25)
+        Me.txtStudentNo.TabIndex = 0
         '
         'Label7
         '
-        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label7.AutoSize = true
+        Me.Label7.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label7.Location = New System.Drawing.Point(267, 313)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(64, 18)
@@ -315,9 +317,9 @@ Partial Class StudentInformationControl
         '
         'Label5
         '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label5.AutoSize = true
+        Me.Label5.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label5.Location = New System.Drawing.Point(267, 208)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(40, 18)
@@ -326,9 +328,9 @@ Partial Class StudentInformationControl
         '
         'Label4
         '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label4.AutoSize = true
+        Me.Label4.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label4.Location = New System.Drawing.Point(267, 278)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(64, 18)
@@ -337,9 +339,9 @@ Partial Class StudentInformationControl
         '
         'Label3
         '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label3.AutoSize = true
+        Me.Label3.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label3.Location = New System.Drawing.Point(267, 173)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(56, 18)
@@ -348,9 +350,9 @@ Partial Class StudentInformationControl
         '
         'Label6
         '
-        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom),System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = true
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.Label6.Location = New System.Drawing.Point(267, 33)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(120, 18)
@@ -365,23 +367,23 @@ Partial Class StudentInformationControl
         Me.studentPictureBox.Name = "studentPictureBox"
         Me.studentPictureBox.Size = New System.Drawing.Size(130, 130)
         Me.studentPictureBox.TabIndex = 18
-        Me.studentPictureBox.TabStop = False
+        Me.studentPictureBox.TabStop = false
         '
         'btnEdit
         '
         Me.btnEdit.Anchor = System.Windows.Forms.AnchorStyles.Bottom
-        Me.btnEdit.Enabled = False
-        Me.btnEdit.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnEdit.Enabled = false
+        Me.btnEdit.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.btnEdit.Location = New System.Drawing.Point(509, 466)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(95, 29)
         Me.btnEdit.TabIndex = 11
         Me.btnEdit.Text = "Edit"
-        Me.btnEdit.UseVisualStyleBackColor = True
+        Me.btnEdit.UseVisualStyleBackColor = true
         '
         'StudentInformationControl
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.btnEdit)
@@ -395,13 +397,13 @@ Partial Class StudentInformationControl
         Me.Controls.Add(Me.btnCancel)
         Me.Controls.Add(Me.btnBrowse)
         Me.Controls.Add(Me.cbYear)
-        Me.Controls.Add(Me.tbAddress)
-        Me.Controls.Add(Me.tbSection)
-        Me.Controls.Add(Me.tbCourse)
-        Me.Controls.Add(Me.tbMiddleName)
-        Me.Controls.Add(Me.tbFirstName)
-        Me.Controls.Add(Me.tbLastName)
-        Me.Controls.Add(Me.tbStudentNo)
+        Me.Controls.Add(Me.txtAddress)
+        Me.Controls.Add(Me.txtSection)
+        Me.Controls.Add(Me.txtCourse)
+        Me.Controls.Add(Me.txtMiddleName)
+        Me.Controls.Add(Me.txtFirstName)
+        Me.Controls.Add(Me.txtLastName)
+        Me.Controls.Add(Me.txtStudentNo)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -411,20 +413,20 @@ Partial Class StudentInformationControl
         Me.Controls.Add(Me.Panel1)
         Me.Name = "StudentInformationControl"
         Me.Size = New System.Drawing.Size(844, 519)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        CType(Me.studentPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
+        CType(Me.studentTable,System.ComponentModel.ISupportInitialize).EndInit
+        Me.Panel1.ResumeLayout(false)
+        Me.Panel2.ResumeLayout(false)
+        Me.Panel2.PerformLayout
+        CType(Me.studentPictureBox,System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
+        Me.PerformLayout
 
-    End Sub
+End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents studentTable As DataGridView
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSearch As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents rbFemale As RadioButton
     Friend WithEvents rbMale As RadioButton
@@ -436,13 +438,13 @@ Partial Class StudentInformationControl
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnBrowse As Button
     Friend WithEvents cbYear As ComboBox
-    Friend WithEvents tbAddress As TextBox
-    Friend WithEvents tbSection As TextBox
-    Friend WithEvents tbCourse As TextBox
-    Friend WithEvents tbMiddleName As TextBox
-    Friend WithEvents tbFirstName As TextBox
-    Friend WithEvents tbLastName As TextBox
-    Friend WithEvents tbStudentNo As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtSection As TextBox
+    Friend WithEvents txtCourse As TextBox
+    Friend WithEvents txtMiddleName As TextBox
+    Friend WithEvents txtFirstName As TextBox
+    Friend WithEvents txtLastName As TextBox
+    Friend WithEvents txtStudentNo As TextBox
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
