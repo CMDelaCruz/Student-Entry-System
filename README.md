@@ -1,2 +1,2 @@
 # Student-Entry-System
-A gati
+A gate monitoring system
