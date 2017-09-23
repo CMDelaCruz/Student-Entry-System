@@ -16,7 +16,6 @@ C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System
 C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.AdminAccountManager.resources
 C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.StudentInformationControl.resources
 C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.SplashScreen.resources
-C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.LoginForm.resources
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\bin\Debug\Student-Entry-System.exe.config
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Student-Entry-System.exe
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Student-Entry-System.xml
@@ -36,3 +35,5 @@ C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Stu
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.StudentRegistrationControl.resources
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Student-Entry-System.vbproj.GenerateResource.Cache
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\bin\Debug\MySql.Data.dll
+C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\bin\Debug\MySql.Data.dll
+C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.MasterControl.resources

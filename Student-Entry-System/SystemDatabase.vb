@@ -26,7 +26,10 @@ Public Class SystemDatabase
         Dim returnValue As New List(Of List(Of String))
         Dim command As New MySqlCommand(sql, connection)
         Try
-            connection.Open()
+            If connection.State <> ConnectionState.Open Then
+                connection.Open()
+            End If
+
 
             Dim reader = command.ExecuteReader()
             While reader.Read()
@@ -60,7 +63,9 @@ Public Class SystemDatabase
         Dim returnValue As New List(Of List(Of String))
         Dim command As New MySqlCommand(sql, connection)
         Try
-            connection.Open()
+            If connection.State <> ConnectionState.Open Then
+                connection.Open()
+            End If
 
             Dim reader = command.ExecuteReader()
             While reader.Read()
@@ -82,7 +87,9 @@ Public Class SystemDatabase
         Dim command = New MySqlCommand(sql, connection)
         Dim returnValue As New List(Of List(Of String))
         Try
-            connection.Open()
+            If connection.State <> ConnectionState.Open Then
+                connection.Open()
+            End If
             Dim reader = command.ExecuteReader()
             While reader.Read()
                 Dim list = New List(Of String)
@@ -105,7 +112,9 @@ Public Class SystemDatabase
         command.Parameters.AddRange(parameters)
         Dim returnValue As New List(Of List(Of String))
         Try
-            connection.Open()
+            If connection.State <> ConnectionState.Open Then
+                connection.Open()
+            End If
             Dim reader = command.ExecuteReader()
             While reader.Read()
                 Dim list = New List(Of String)

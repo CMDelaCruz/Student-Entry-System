@@ -3,10 +3,9 @@
     Dim studentInformation As StudentInformationControl
     Dim studentRegistrar As StudentRegistrationControl
     Dim adminManager As AdminAccountManager
+    Dim masterControl As MasterControl
 
     Dim currentButton As Button
-
-    'New btnLogs_Click(btnLogs, New EventArgs())
 
     Private Sub btnLogs_Click(sender As Object, e As EventArgs) Handles btnLogs.Click
         loadControl(studentLogs, controlPanel)
@@ -33,7 +32,7 @@
     End Sub
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
-        setClickedNavigationOne(btnLogOut, 17, 102, 17)
+        MainForm.loadLoginMenu()
     End Sub
 
     Private Sub loadControl(ByVal userControl As UserControl, panel As Panel)
@@ -81,7 +80,14 @@
         studentInformation = New StudentInformationControl()
         studentRegistrar = New StudentRegistrationControl()
         adminManager = New AdminAccountManager()
+        masterControl = New MasterControl()
 
-        btnLogs.PerformClick()
+        btnRecords.PerformClick()
+    End Sub
+
+    Private Sub btnAdminTools_Click(sender As Object, e As EventArgs) Handles btnAdminTools.Click
+        loadControl(masterControl, controlPanel)
+        setClickedNavigationOne(btnAdminTools, 17, 102, 17)
+        currentButton = btnAdminTools
     End Sub
 End Class

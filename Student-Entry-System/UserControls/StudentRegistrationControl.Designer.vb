@@ -31,21 +31,23 @@ Partial Class StudentRegistrationControl
         Me.tbLastName = New System.Windows.Forms.TextBox()
         Me.tbFirstName = New System.Windows.Forms.TextBox()
         Me.tbMiddleName = New System.Windows.Forms.TextBox()
-        Me.tbYear = New System.Windows.Forms.TextBox()
-        Me.tbSection = New System.Windows.Forms.TextBox()
         Me.tbAddress = New System.Windows.Forms.TextBox()
-        Me.btnBrowse = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.cbYear = New System.Windows.Forms.ComboBox()
         Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btnBrowse = New System.Windows.Forms.Button()
         Me.studentPictureBox = New System.Windows.Forms.PictureBox()
+        Me.tbContactNo = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.cbCourse = New System.Windows.Forms.ComboBox()
+        Me.cbSection = New System.Windows.Forms.ComboBox()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.studentPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -78,9 +80,9 @@ Partial Class StudentRegistrationControl
         Me.Label4.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(128, 308)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 18)
+        Me.Label4.Size = New System.Drawing.Size(56, 18)
         Me.Label4.TabIndex = 1
-        Me.Label4.Text = "Course : "
+        Me.Label4.Text = "Course"
         '
         'Label5
         '
@@ -98,11 +100,11 @@ Partial Class StudentRegistrationControl
         Me.Label7.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(128, 343)
+        Me.Label7.Location = New System.Drawing.Point(128, 381)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(88, 18)
+        Me.Label7.Size = New System.Drawing.Size(64, 18)
         Me.Label7.TabIndex = 1
-        Me.Label7.Text = "Address : "
+        Me.Label7.Text = "Address"
         '
         'tbStudentNo
         '
@@ -140,70 +142,27 @@ Partial Class StudentRegistrationControl
         Me.tbMiddleName.Size = New System.Drawing.Size(236, 25)
         Me.tbMiddleName.TabIndex = 2
         '
-        'tbYear
-        '
-        Me.tbYear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbYear.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbYear.Location = New System.Drawing.Point(267, 305)
-        Me.tbYear.Name = "tbYear"
-        Me.tbYear.Size = New System.Drawing.Size(236, 25)
-        Me.tbYear.TabIndex = 8
-        '
-        'tbSection
-        '
-        Me.tbSection.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.tbSection.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbSection.Location = New System.Drawing.Point(267, 270)
-        Me.tbSection.Name = "tbSection"
-        Me.tbSection.Size = New System.Drawing.Size(189, 25)
-        Me.tbSection.TabIndex = 7
-        '
         'tbAddress
         '
         Me.tbAddress.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.tbAddress.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.tbAddress.Location = New System.Drawing.Point(267, 340)
+        Me.tbAddress.Location = New System.Drawing.Point(267, 378)
         Me.tbAddress.Multiline = True
         Me.tbAddress.Name = "tbAddress"
-        Me.tbAddress.Size = New System.Drawing.Size(236, 111)
-        Me.tbAddress.TabIndex = 9
-        '
-        'btnBrowse
-        '
-        Me.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.btnBrowse.BackColor = System.Drawing.Color.Black
-        Me.btnBrowse.FlatAppearance.BorderSize = 0
-        Me.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnBrowse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnBrowse.Location = New System.Drawing.Point(751, 55)
-        Me.btnBrowse.Name = "btnBrowse"
-        Me.btnBrowse.Size = New System.Drawing.Size(20, 20)
-        Me.btnBrowse.TabIndex = 10
-        Me.btnBrowse.UseVisualStyleBackColor = False
+        Me.tbAddress.Size = New System.Drawing.Size(236, 73)
+        Me.tbAddress.TabIndex = 10
         '
         'btnAdd
         '
         Me.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnAdd.Enabled = False
         Me.btnAdd.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.Location = New System.Drawing.Point(571, 422)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(95, 29)
-        Me.btnAdd.TabIndex = 12
+        Me.btnAdd.TabIndex = 13
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.Button2.BackColor = System.Drawing.Color.Black
-        Me.Button2.FlatAppearance.BorderSize = 0
-        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Button2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(751, 78)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(20, 20)
-        Me.Button2.TabIndex = 11
-        Me.Button2.UseVisualStyleBackColor = False
         '
         'btnCancel
         '
@@ -213,7 +172,7 @@ Partial Class StudentRegistrationControl
         Me.btnCancel.Location = New System.Drawing.Point(676, 422)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(95, 29)
-        Me.btnCancel.TabIndex = 13
+        Me.btnCancel.TabIndex = 14
         Me.btnCancel.Text = "Cancel"
         Me.btnCancel.UseVisualStyleBackColor = True
         '
@@ -250,32 +209,23 @@ Partial Class StudentRegistrationControl
         Me.Label10.TabIndex = 15
         Me.Label10.Text = "Middle Name"
         '
-        'ComboBox1
+        'cbYear
         '
-        Me.ComboBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.ComboBox1.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"1st", "2nd", "3rd", "4th", "5th"})
-        Me.ComboBox1.Location = New System.Drawing.Point(267, 235)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(67, 26)
-        Me.ComboBox1.TabIndex = 6
-        '
-        'Label2
-        '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(128, 273)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(64, 18)
-        Me.Label2.TabIndex = 16
-        Me.Label2.Text = "Section"
+        Me.cbYear.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbYear.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbYear.FormattingEnabled = True
+        Me.cbYear.Items.AddRange(New Object() {"1", "2", "3", "4", "5"})
+        Me.cbYear.Location = New System.Drawing.Point(267, 235)
+        Me.cbYear.Name = "cbYear"
+        Me.cbYear.Size = New System.Drawing.Size(126, 26)
+        Me.cbYear.TabIndex = 6
         '
         'RadioButton1
         '
         Me.RadioButton1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
         Me.RadioButton1.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(267, 203)
         Me.RadioButton1.Name = "RadioButton1"
@@ -294,19 +244,106 @@ Partial Class StudentRegistrationControl
         Me.RadioButton2.Name = "RadioButton2"
         Me.RadioButton2.Size = New System.Drawing.Size(67, 19)
         Me.RadioButton2.TabIndex = 5
-        Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Female"
         Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.Button2.BackColor = System.Drawing.Color.White
+        Me.Button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ControlLight
+        Me.Button2.Image = Global.Student_Entry_System.My.Resources.Resources.Cancel_24px
+        Me.Button2.Location = New System.Drawing.Point(750, 79)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(25, 25)
+        Me.Button2.TabIndex = 12
+        Me.Button2.UseVisualStyleBackColor = False
+        '
+        'btnBrowse
+        '
+        Me.btnBrowse.Anchor = System.Windows.Forms.AnchorStyles.Top
+        Me.btnBrowse.BackColor = System.Drawing.Color.White
+        Me.btnBrowse.FlatAppearance.BorderColor = System.Drawing.Color.Gray
+        Me.btnBrowse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBrowse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBrowse.ForeColor = System.Drawing.Color.White
+        Me.btnBrowse.Image = Global.Student_Entry_System.My.Resources.Resources.Edit_24px
+        Me.btnBrowse.Location = New System.Drawing.Point(750, 55)
+        Me.btnBrowse.Name = "btnBrowse"
+        Me.btnBrowse.Size = New System.Drawing.Size(25, 25)
+        Me.btnBrowse.TabIndex = 11
+        Me.btnBrowse.UseVisualStyleBackColor = False
         '
         'studentPictureBox
         '
         Me.studentPictureBox.Anchor = System.Windows.Forms.AnchorStyles.Top
         Me.studentPictureBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText
+        Me.studentPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.studentPictureBox.Image = Global.Student_Entry_System.My.Resources.Resources.images
         Me.studentPictureBox.Location = New System.Drawing.Point(571, 55)
         Me.studentPictureBox.Name = "studentPictureBox"
         Me.studentPictureBox.Size = New System.Drawing.Size(180, 180)
+        Me.studentPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.studentPictureBox.TabIndex = 0
         Me.studentPictureBox.TabStop = False
+        '
+        'tbContactNo
+        '
+        Me.tbContactNo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.tbContactNo.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.tbContactNo.Location = New System.Drawing.Point(267, 341)
+        Me.tbContactNo.Name = "tbContactNo"
+        Me.tbContactNo.Size = New System.Drawing.Size(236, 25)
+        Me.tbContactNo.TabIndex = 9
+        '
+        'Label6
+        '
+        Me.Label6.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(128, 344)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(96, 18)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "Contact No."
+        '
+        'cbCourse
+        '
+        Me.cbCourse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.cbCourse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbCourse.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbCourse.FormattingEnabled = True
+        Me.cbCourse.Items.AddRange(New Object() {"BS Business Administration", "BS Hotel and Restaurant Management", "BS Information Technology", "BS Computer Science", "BS Computer Engineering", "BS Tourism", "Institutional Health Care", "Hotel and Restaurant Services", "Consumer Electronics", "Computer Programming"})
+        Me.cbCourse.Location = New System.Drawing.Point(267, 305)
+        Me.cbCourse.Name = "cbCourse"
+        Me.cbCourse.Size = New System.Drawing.Size(236, 26)
+        Me.cbCourse.TabIndex = 8
+        '
+        'cbSection
+        '
+        Me.cbSection.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.cbSection.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbSection.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbSection.FormattingEnabled = True
+        Me.cbSection.Items.AddRange(New Object() {"A", "B", "C", "D", "E"})
+        Me.cbSection.Location = New System.Drawing.Point(267, 270)
+        Me.cbSection.Name = "cbSection"
+        Me.cbSection.Size = New System.Drawing.Size(126, 26)
+        Me.cbSection.TabIndex = 7
+        '
+        'Label2
+        '
+        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(128, 273)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(64, 18)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "Section"
         '
         'StudentRegistrationControl
         '
@@ -314,6 +351,10 @@ Partial Class StudentRegistrationControl
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Controls.Add(Me.cbSection)
+        Me.Controls.Add(Me.cbCourse)
+        Me.Controls.Add(Me.tbContactNo)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.RadioButton2)
         Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.Label2)
@@ -324,10 +365,8 @@ Partial Class StudentRegistrationControl
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.btnBrowse)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.cbYear)
         Me.Controls.Add(Me.tbAddress)
-        Me.Controls.Add(Me.tbSection)
-        Me.Controls.Add(Me.tbYear)
         Me.Controls.Add(Me.tbMiddleName)
         Me.Controls.Add(Me.tbFirstName)
         Me.Controls.Add(Me.tbLastName)
@@ -356,8 +395,6 @@ Partial Class StudentRegistrationControl
     Friend WithEvents tbLastName As TextBox
     Friend WithEvents tbFirstName As TextBox
     Friend WithEvents tbMiddleName As TextBox
-    Friend WithEvents tbYear As TextBox
-    Friend WithEvents tbSection As TextBox
     Friend WithEvents tbAddress As TextBox
     Friend WithEvents btnBrowse As Button
     Friend WithEvents btnAdd As Button
@@ -366,8 +403,12 @@ Partial Class StudentRegistrationControl
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents Label2 As Label
+    Friend WithEvents cbYear As ComboBox
     Friend WithEvents RadioButton1 As RadioButton
     Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents tbContactNo As TextBox
+    Friend WithEvents Label6 As Label
+    Friend WithEvents cbCourse As ComboBox
+    Friend WithEvents cbSection As ComboBox
+    Friend WithEvents Label2 As Label
 End Class

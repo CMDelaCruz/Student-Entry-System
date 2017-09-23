@@ -22,148 +22,209 @@ Partial Class MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btnSplash = New System.Windows.Forms.Button()
-        Me.btnLabelAdmin = New System.Windows.Forms.LinkLabel()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
+        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.btnLogin = New System.Windows.Forms.Button()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.pbLogo = New System.Windows.Forms.PictureBox()
-        Me.Panel1.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Panel1
+        'btnSplash
         '
-        Me.Panel1.BackColor = System.Drawing.Color.MidnightBlue
-        Me.Panel1.Controls.Add(Me.Panel2)
-        Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
-        Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(10)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1180, 137)
-        Me.Panel1.TabIndex = 0
+        Me.btnSplash.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnSplash.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.btnSplash.FlatAppearance.BorderSize = 0
+        Me.btnSplash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnSplash.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSplash.ForeColor = System.Drawing.Color.White
+        Me.btnSplash.Location = New System.Drawing.Point(76, 492)
+        Me.btnSplash.Name = "btnSplash"
+        Me.btnSplash.Size = New System.Drawing.Size(254, 24)
+        Me.btnSplash.TabIndex = 3
+        Me.btnSplash.Text = "Splash Screen"
+        Me.btnSplash.UseVisualStyleBackColor = False
         '
-        'Label1
+        'Panel3
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(371, 71)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(562, 24)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "St. Nicolas College of Business and Technology"
+        Me.Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(53, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.Panel3.Controls.Add(Me.txtPassword)
+        Me.Panel3.Controls.Add(Me.txtUsername)
+        Me.Panel3.Controls.Add(Me.Label4)
+        Me.Panel3.Controls.Add(Me.Label5)
+        Me.Panel3.Controls.Add(Me.btnLogin)
+        Me.Panel3.Controls.Add(Me.btnSplash)
+        Me.Panel3.Dock = System.Windows.Forms.DockStyle.Right
+        Me.Panel3.Location = New System.Drawing.Point(789, 0)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(391, 516)
+        Me.Panel3.TabIndex = 3
+        '
+        'txtPassword
+        '
+        Me.txtPassword.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(100, 246)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(230, 24)
+        Me.txtPassword.TabIndex = 1
+        Me.txtPassword.UseSystemPasswordChar = True
+        '
+        'txtUsername
+        '
+        Me.txtUsername.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtUsername.BackColor = System.Drawing.Color.White
+        Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUsername.Location = New System.Drawing.Point(100, 202)
+        Me.txtUsername.Name = "txtUsername"
+        Me.txtUsername.Size = New System.Drawing.Size(230, 24)
+        Me.txtUsername.TabIndex = 0
+        '
+        'Label4
+        '
+        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label4.BackColor = System.Drawing.Color.White
+        Me.Label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Image = Global.Student_Entry_System.My.Resources.Resources.Lock_2_24px
+        Me.Label4.Location = New System.Drawing.Point(76, 246)
+        Me.Label4.MaximumSize = New System.Drawing.Size(24, 24)
+        Me.Label4.MinimumSize = New System.Drawing.Size(24, 24)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(24, 24)
+        Me.Label4.TabIndex = 5
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label5
+        '
+        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label5.BackColor = System.Drawing.Color.White
+        Me.Label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Image = Global.Student_Entry_System.My.Resources.Resources.User_24px
+        Me.Label5.Location = New System.Drawing.Point(76, 202)
+        Me.Label5.MaximumSize = New System.Drawing.Size(24, 24)
+        Me.Label5.MinimumSize = New System.Drawing.Size(24, 24)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(24, 24)
+        Me.Label5.TabIndex = 4
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'btnLogin
+        '
+        Me.btnLogin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(39, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(25, Byte), Integer))
+        Me.btnLogin.FlatAppearance.BorderSize = 0
+        Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnLogin.Font = New System.Drawing.Font("Consolas", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLogin.ForeColor = System.Drawing.Color.White
+        Me.btnLogin.Location = New System.Drawing.Point(76, 290)
+        Me.btnLogin.MaximumSize = New System.Drawing.Size(254, 24)
+        Me.btnLogin.Name = "btnLogin"
+        Me.btnLogin.Size = New System.Drawing.Size(254, 24)
+        Me.btnLogin.TabIndex = 2
+        Me.btnLogin.Text = "Login"
+        Me.btnLogin.UseVisualStyleBackColor = False
         '
         'Panel2
         '
-        Me.Panel2.BackColor = System.Drawing.Color.White
+        Me.Panel2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
         Me.Panel2.Controls.Add(Me.Label3)
         Me.Panel2.Controls.Add(Me.Label2)
         Me.Panel2.Controls.Add(Me.Label1)
         Me.Panel2.Controls.Add(Me.pbLogo)
-        Me.Panel2.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Panel2.Location = New System.Drawing.Point(0, 0)
+        Me.Panel2.Location = New System.Drawing.Point(-1, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1180, 137)
-        Me.Panel2.TabIndex = 0
+        Me.Panel2.Size = New System.Drawing.Size(789, 137)
+        Me.Panel2.TabIndex = 3
         '
-        'btnSplash
+        'Label3
         '
-        Me.btnSplash.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnSplash.BackColor = System.Drawing.Color.White
-        Me.btnSplash.FlatAppearance.BorderSize = 0
-        Me.btnSplash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnSplash.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnSplash.Location = New System.Drawing.Point(914, 436)
-        Me.btnSplash.Name = "btnSplash"
-        Me.btnSplash.Size = New System.Drawing.Size(254, 68)
-        Me.btnSplash.TabIndex = 1
-        Me.btnSplash.Text = "Splash Screen"
-        Me.btnSplash.UseVisualStyleBackColor = False
-        '
-        'btnLabelAdmin
-        '
-        Me.btnLabelAdmin.ActiveLinkColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.btnLabelAdmin.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnLabelAdmin.AutoSize = True
-        Me.btnLabelAdmin.Font = New System.Drawing.Font("Consolas", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnLabelAdmin.LinkColor = System.Drawing.Color.White
-        Me.btnLabelAdmin.Location = New System.Drawing.Point(956, 414)
-        Me.btnLabelAdmin.Name = "btnLabelAdmin"
-        Me.btnLabelAdmin.Size = New System.Drawing.Size(180, 19)
-        Me.btnLabelAdmin.TabIndex = 2
-        Me.btnLabelAdmin.TabStop = True
-        Me.btnLabelAdmin.Text = "Administrator Login"
-        Me.btnLabelAdmin.VisitedLinkColor = System.Drawing.Color.White
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Black
+        Me.Label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft
+        Me.Label3.Location = New System.Drawing.Point(161, 81)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(541, 35)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "MEL-VI BLDG., JOSE ABAD SANTOS AVE., DOLORES, CITY OF SAN FERNANDO PAMPANGA"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Label2
         '
-        Me.Label2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Consolas", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(469, 31)
+        Me.Label2.Location = New System.Drawing.Point(157, 20)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(377, 37)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Student Entry System"
         '
-        'Label3
+        'Label1
         '
-        Me.Label3.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
-        Me.Label3.BackColor = System.Drawing.Color.Transparent
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft
-        Me.Label3.Location = New System.Drawing.Point(383, 95)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(541, 35)
-        Me.Label3.TabIndex = 14
-        Me.Label3.Text = "MEL-VI BLDG., JOSE ABAD SANTOS AVE., DOLORES, CITY OF SAN FERNANDO PAMPANGA"
-        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Consolas", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.Black
+        Me.Label1.Location = New System.Drawing.Point(160, 59)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(562, 24)
+        Me.Label1.TabIndex = 1
+        Me.Label1.Text = "St. Nicolas College of Business and Technology"
         '
         'pbLogo
         '
-        Me.pbLogo.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
         Me.pbLogo.Image = Global.Student_Entry_System.My.Resources.Resources._380747_268470246594653_135723565_n
-        Me.pbLogo.Location = New System.Drawing.Point(217, 0)
+        Me.pbLogo.Location = New System.Drawing.Point(14, 0)
         Me.pbLogo.Name = "pbLogo"
         Me.pbLogo.Padding = New System.Windows.Forms.Padding(10)
         Me.pbLogo.Size = New System.Drawing.Size(137, 137)
+        Me.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pbLogo.TabIndex = 0
         Me.pbLogo.TabStop = False
         '
         'MainForm
         '
+        Me.AcceptButton = Me.btnLogin
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(17, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(17, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1180, 516)
-        Me.Controls.Add(Me.btnSplash)
-        Me.Controls.Add(Me.btnLabelAdmin)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel3)
         Me.MinimumSize = New System.Drawing.Size(1196, 555)
         Me.Name = "MainForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Student Entry System"
-        Me.Panel1.ResumeLayout(False)
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents pbLogo As PictureBox
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Panel2 As Panel
     Friend WithEvents btnSplash As Button
-    Friend WithEvents btnLabelAdmin As LinkLabel
-    Friend WithEvents Label2 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel2 As Panel
     Friend WithEvents Label3 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents pbLogo As PictureBox
+    Friend WithEvents btnLogin As Button
+    Friend WithEvents txtPassword As TextBox
+    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

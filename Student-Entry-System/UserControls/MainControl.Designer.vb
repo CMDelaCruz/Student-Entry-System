@@ -23,6 +23,7 @@ Partial Class MainControl
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.btnAdminTools = New System.Windows.Forms.Button()
         Me.btnLogOut = New System.Windows.Forms.Button()
         Me.btnAccManager = New System.Windows.Forms.Button()
         Me.btnLogs = New System.Windows.Forms.Button()
@@ -42,6 +43,7 @@ Partial Class MainControl
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(45, Byte), Integer), CType(CType(136, Byte), Integer), CType(CType(45, Byte), Integer))
+        Me.Panel1.Controls.Add(Me.btnAdminTools)
         Me.Panel1.Controls.Add(Me.btnLogOut)
         Me.Panel1.Controls.Add(Me.btnAccManager)
         Me.Panel1.Controls.Add(Me.btnLogs)
@@ -51,6 +53,22 @@ Partial Class MainControl
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(238, 542)
         Me.Panel1.TabIndex = 0
+        '
+        'btnAdminTools
+        '
+        Me.btnAdminTools.BackColor = System.Drawing.Color.Transparent
+        Me.btnAdminTools.Dock = System.Windows.Forms.DockStyle.Top
+        Me.btnAdminTools.FlatAppearance.BorderSize = 0
+        Me.btnAdminTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAdminTools.Font = New System.Drawing.Font("Consolas", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnAdminTools.ForeColor = System.Drawing.Color.White
+        Me.btnAdminTools.Location = New System.Drawing.Point(0, 150)
+        Me.btnAdminTools.Name = "btnAdminTools"
+        Me.btnAdminTools.Size = New System.Drawing.Size(238, 50)
+        Me.btnAdminTools.TabIndex = 4
+        Me.btnAdminTools.Text = "Administrator Tools"
+        Me.btnAdminTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btnAdminTools.UseVisualStyleBackColor = False
         '
         'btnLogOut
         '
@@ -79,7 +97,7 @@ Partial Class MainControl
         Me.btnAccManager.Name = "btnAccManager"
         Me.btnAccManager.Size = New System.Drawing.Size(238, 50)
         Me.btnAccManager.TabIndex = 1
-        Me.btnAccManager.Text = "Administrator Account Management"
+        Me.btnAccManager.Text = "My Account"
         Me.btnAccManager.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAccManager.UseVisualStyleBackColor = False
         '
@@ -213,4 +231,5 @@ Partial Class MainControl
     Friend WithEvents btnRegisterStudent As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents studentPanel As Panel
+    Friend WithEvents btnAdminTools As Button
 End Class

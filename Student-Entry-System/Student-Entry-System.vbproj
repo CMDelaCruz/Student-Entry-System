@@ -92,12 +92,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.vb" />
-    <Compile Include="LoginForm.Designer.vb">
-      <DependentUpon>LoginForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="LoginForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +133,12 @@
     <Compile Include="UserControls\MainControl.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="UserControls\MasterControl.Designer.vb">
+      <DependentUpon>MasterControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MasterControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="UserControls\StudentInformationControl.Designer.vb">
       <DependentUpon>StudentInformationControl.vb</DependentUpon>
     </Compile>
@@ -159,9 +159,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="LoginForm.resx">
-      <DependentUpon>LoginForm.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\MainControl.resx">
       <DependentUpon>MainControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\MasterControl.resx">
+      <DependentUpon>MasterControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\StudentInformationControl.resx">
       <DependentUpon>StudentInformationControl.vb</DependentUpon>
