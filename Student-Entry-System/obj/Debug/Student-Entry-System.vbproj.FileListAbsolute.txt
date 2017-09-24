@@ -37,3 +37,6 @@ C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\obj\Debug\Stu
 C:\Users\tjako\Documents\Student-Entry-System\Student-Entry-System\bin\Debug\MySql.Data.dll
 C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\bin\Debug\MySql.Data.dll
 C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\obj\Debug\Student_Entry_System.MasterControl.resources
+C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\bin\Debug\MySqlBackup.dll
+C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\bin\Debug\itextsharp.dll
+C:\Users\Carlos Dela Cruz\source\repos\Student-Entry-System\Student-Entry-System\bin\Debug\itextsharp.xml

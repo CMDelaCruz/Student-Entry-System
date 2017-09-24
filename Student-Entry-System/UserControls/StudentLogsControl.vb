@@ -13,6 +13,7 @@ Public Class StudentLogsControl
         gridLogs.DataSource = logs
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtSearch.TextChanged
+    Private Sub StudentLogsControl_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        InitializeStudentList()
     End Sub
 End Class

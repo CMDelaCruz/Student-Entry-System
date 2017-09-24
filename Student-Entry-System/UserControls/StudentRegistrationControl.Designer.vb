@@ -280,9 +280,8 @@ Partial Class StudentRegistrationControl
         'studentPictureBox
         '
         Me.studentPictureBox.Anchor = System.Windows.Forms.AnchorStyles.Top
-        Me.studentPictureBox.BackColor = System.Drawing.SystemColors.InactiveCaptionText
+        Me.studentPictureBox.BackColor = System.Drawing.SystemColors.ControlDark
         Me.studentPictureBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.studentPictureBox.Image = Global.Student_Entry_System.My.Resources.Resources.images
         Me.studentPictureBox.Location = New System.Drawing.Point(571, 55)
         Me.studentPictureBox.Name = "studentPictureBox"
         Me.studentPictureBox.Size = New System.Drawing.Size(180, 180)

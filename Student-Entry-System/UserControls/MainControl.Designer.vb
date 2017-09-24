@@ -69,6 +69,7 @@ Partial Class MainControl
         Me.btnAdminTools.Text = "Administrator Tools"
         Me.btnAdminTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btnAdminTools.UseVisualStyleBackColor = False
+        Me.btnAdminTools.Visible = False
         '
         'btnLogOut
         '

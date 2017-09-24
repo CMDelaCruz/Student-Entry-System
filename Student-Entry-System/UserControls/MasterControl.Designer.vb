@@ -52,6 +52,12 @@ Partial Class MasterControl
         Me.tbMiddlename = New System.Windows.Forms.TextBox()
         Me.adminList = New System.Windows.Forms.DataGridView()
         Me.tpAdminTools = New System.Windows.Forms.TabPage()
+        Me.TableLayoutPanel2 = New System.Windows.Forms.TableLayoutPanel()
+        Me.tbLogPrint = New System.Windows.Forms.Button()
+        Me.tbLogExport = New System.Windows.Forms.Button()
+        Me.tbDBBackup = New System.Windows.Forms.Button()
+        Me.tbDBImport = New System.Windows.Forms.Button()
+        Me.btnReset = New System.Windows.Forms.Button()
         Me.tbcTools.SuspendLayout()
         Me.tpEventLogs.SuspendLayout()
         CType(Me.dgvEvents, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -59,6 +65,8 @@ Partial Class MasterControl
         Me.TableLayoutPanel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         CType(Me.adminList, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.tpAdminTools.SuspendLayout()
+        Me.TableLayoutPanel2.SuspendLayout()
         Me.SuspendLayout()
         '
         'tbcTools
@@ -135,6 +143,7 @@ Partial Class MasterControl
         'btnAddAcc
         '
         Me.btnAddAcc.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnAddAcc.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.btnAddAcc.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnAddAcc.Location = New System.Drawing.Point(3, 3)
         Me.btnAddAcc.Name = "btnAddAcc"
@@ -146,6 +155,7 @@ Partial Class MasterControl
         'btnManage
         '
         Me.btnManage.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnManage.FlatAppearance.BorderColor = System.Drawing.Color.Green
         Me.btnManage.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnManage.Location = New System.Drawing.Point(299, 3)
         Me.btnManage.Name = "btnManage"
@@ -413,6 +423,7 @@ Partial Class MasterControl
         '
         'tpAdminTools
         '
+        Me.tpAdminTools.Controls.Add(Me.TableLayoutPanel2)
         Me.tpAdminTools.Location = New System.Drawing.Point(4, 24)
         Me.tpAdminTools.Name = "tpAdminTools"
         Me.tpAdminTools.Padding = New System.Windows.Forms.Padding(3)
@@ -420,6 +431,91 @@ Partial Class MasterControl
         Me.tpAdminTools.TabIndex = 2
         Me.tpAdminTools.Text = "Administrator Tools"
         Me.tpAdminTools.UseVisualStyleBackColor = True
+        '
+        'TableLayoutPanel2
+        '
+        Me.TableLayoutPanel2.ColumnCount = 3
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel2.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334!))
+        Me.TableLayoutPanel2.Controls.Add(Me.tbLogPrint, 0, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.tbLogExport, 0, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.tbDBBackup, 1, 1)
+        Me.TableLayoutPanel2.Controls.Add(Me.tbDBImport, 1, 0)
+        Me.TableLayoutPanel2.Controls.Add(Me.btnReset, 2, 0)
+        Me.TableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.TableLayoutPanel2.Location = New System.Drawing.Point(3, 3)
+        Me.TableLayoutPanel2.Name = "TableLayoutPanel2"
+        Me.TableLayoutPanel2.RowCount = 2
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel2.Size = New System.Drawing.Size(830, 485)
+        Me.TableLayoutPanel2.TabIndex = 0
+        '
+        'tbLogPrint
+        '
+        Me.tbLogPrint.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tbLogPrint.Image = Global.Student_Entry_System.My.Resources.Resources.Print_48px
+        Me.tbLogPrint.Location = New System.Drawing.Point(3, 3)
+        Me.tbLogPrint.Name = "tbLogPrint"
+        Me.tbLogPrint.Size = New System.Drawing.Size(270, 236)
+        Me.tbLogPrint.TabIndex = 0
+        Me.tbLogPrint.Text = "Print Logs"
+        Me.tbLogPrint.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.tbLogPrint.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.tbLogPrint.UseVisualStyleBackColor = True
+        '
+        'tbLogExport
+        '
+        Me.tbLogExport.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tbLogExport.Image = Global.Student_Entry_System.My.Resources.Resources.Export_48px
+        Me.tbLogExport.Location = New System.Drawing.Point(3, 245)
+        Me.tbLogExport.Name = "tbLogExport"
+        Me.tbLogExport.Size = New System.Drawing.Size(270, 237)
+        Me.tbLogExport.TabIndex = 3
+        Me.tbLogExport.Text = "Export Logs"
+        Me.tbLogExport.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.tbLogExport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.tbLogExport.UseVisualStyleBackColor = True
+        '
+        'tbDBBackup
+        '
+        Me.tbDBBackup.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tbDBBackup.Image = Global.Student_Entry_System.My.Resources.Resources.Synchronize_48px
+        Me.tbDBBackup.Location = New System.Drawing.Point(279, 245)
+        Me.tbDBBackup.Name = "tbDBBackup"
+        Me.tbDBBackup.Size = New System.Drawing.Size(270, 237)
+        Me.tbDBBackup.TabIndex = 1
+        Me.tbDBBackup.Text = "Backup Database"
+        Me.tbDBBackup.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.tbDBBackup.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.tbDBBackup.UseVisualStyleBackColor = True
+        '
+        'tbDBImport
+        '
+        Me.tbDBImport.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.tbDBImport.Image = Global.Student_Entry_System.My.Resources.Resources.File_48px
+        Me.tbDBImport.Location = New System.Drawing.Point(279, 3)
+        Me.tbDBImport.Name = "tbDBImport"
+        Me.tbDBImport.Size = New System.Drawing.Size(270, 236)
+        Me.tbDBImport.TabIndex = 4
+        Me.tbDBImport.Text = "Import Database"
+        Me.tbDBImport.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.tbDBImport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.tbDBImport.UseVisualStyleBackColor = True
+        '
+        'btnReset
+        '
+        Me.btnReset.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btnReset.Image = Global.Student_Entry_System.My.Resources.Resources.Reset_48px
+        Me.btnReset.Location = New System.Drawing.Point(555, 3)
+        Me.btnReset.Name = "btnReset"
+        Me.btnReset.Size = New System.Drawing.Size(272, 236)
+        Me.btnReset.TabIndex = 5
+        Me.btnReset.Text = "Reset System"
+        Me.btnReset.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        Me.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+        Me.btnReset.UseVisualStyleBackColor = True
         '
         'MasterControl
         '
@@ -436,6 +532,8 @@ Partial Class MasterControl
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
         CType(Me.adminList, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.tpAdminTools.ResumeLayout(False)
+        Me.TableLayoutPanel2.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -470,4 +568,10 @@ Partial Class MasterControl
     Friend WithEvents btnAddAcc As Button
     Friend WithEvents dgvEvents As DataGridView
     Friend WithEvents btnManage As Button
+    Friend WithEvents TableLayoutPanel2 As TableLayoutPanel
+    Friend WithEvents tbLogPrint As Button
+    Friend WithEvents tbLogExport As Button
+    Friend WithEvents tbDBBackup As Button
+    Friend WithEvents tbDBImport As Button
+    Friend WithEvents btnReset As Button
 End Class

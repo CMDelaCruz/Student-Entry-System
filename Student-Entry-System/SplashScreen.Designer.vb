@@ -33,8 +33,8 @@ Partial Class SplashScreen
         Me.lblName = New System.Windows.Forms.Label()
         Me.lblCourse = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.btnAccept = New System.Windows.Forms.Button()
         Me.tbCode = New System.Windows.Forms.TextBox()
+        Me.lblDateTime = New System.Windows.Forms.Label()
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel2.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,9 +106,10 @@ Partial Class SplashScreen
         '
         'PictureBox1
         '
-        Me.PictureBox1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.PictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Image = Global.Student_Entry_System.My.Resources.Resources.images
-        Me.PictureBox1.Location = New System.Drawing.Point(76, 196)
+        Me.PictureBox1.Location = New System.Drawing.Point(85, 197)
         Me.PictureBox1.MaximumSize = New System.Drawing.Size(270, 270)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(270, 270)
@@ -118,11 +119,11 @@ Partial Class SplashScreen
         '
         'Label4
         '
-        Me.Label4.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.Label4.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.Color.Transparent
         Me.Label4.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(398, 196)
+        Me.Label4.Location = New System.Drawing.Point(407, 197)
         Me.Label4.MaximumSize = New System.Drawing.Size(75, 32)
         Me.Label4.MinimumSize = New System.Drawing.Size(75, 32)
         Me.Label4.Name = "Label4"
@@ -132,10 +133,10 @@ Partial Class SplashScreen
         '
         'Label5
         '
-        Me.Label5.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.Label5.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.Label5.BackColor = System.Drawing.Color.Transparent
         Me.Label5.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(398, 337)
+        Me.Label5.Location = New System.Drawing.Point(407, 338)
         Me.Label5.MaximumSize = New System.Drawing.Size(105, 32)
         Me.Label5.MinimumSize = New System.Drawing.Size(105, 32)
         Me.Label5.Name = "Label5"
@@ -145,53 +146,37 @@ Partial Class SplashScreen
         '
         'lblName
         '
-        Me.lblName.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lblName.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblName.BackColor = System.Drawing.Color.Transparent
         Me.lblName.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblName.Location = New System.Drawing.Point(420, 228)
-        Me.lblName.MaximumSize = New System.Drawing.Size(481, 96)
-        Me.lblName.MinimumSize = New System.Drawing.Size(481, 96)
+        Me.lblName.Location = New System.Drawing.Point(429, 229)
+        Me.lblName.MaximumSize = New System.Drawing.Size(446, 96)
+        Me.lblName.MinimumSize = New System.Drawing.Size(446, 96)
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(481, 96)
+        Me.lblName.Size = New System.Drawing.Size(446, 96)
         Me.lblName.TabIndex = 5
-        Me.lblName.Text = "Santos, Dimitri Javes"
         '
         'lblCourse
         '
-        Me.lblCourse.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lblCourse.Anchor = System.Windows.Forms.AnchorStyles.None
         Me.lblCourse.BackColor = System.Drawing.Color.Transparent
         Me.lblCourse.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblCourse.Location = New System.Drawing.Point(420, 384)
-        Me.lblCourse.MaximumSize = New System.Drawing.Size(481, 96)
-        Me.lblCourse.MinimumSize = New System.Drawing.Size(481, 96)
+        Me.lblCourse.Location = New System.Drawing.Point(429, 385)
+        Me.lblCourse.MaximumSize = New System.Drawing.Size(446, 96)
+        Me.lblCourse.MinimumSize = New System.Drawing.Size(446, 96)
         Me.lblCourse.Name = "lblCourse"
-        Me.lblCourse.Size = New System.Drawing.Size(481, 96)
+        Me.lblCourse.Size = New System.Drawing.Size(446, 96)
         Me.lblCourse.TabIndex = 6
-        Me.lblCourse.Text = "BS Computer Science"
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.PapayaWhip
-        Me.Panel1.Controls.Add(Me.btnAccept)
         Me.Panel1.Controls.Add(Me.tbCode)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.Panel1.Location = New System.Drawing.Point(0, 484)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(944, 48)
         Me.Panel1.TabIndex = 7
-        '
-        'btnAccept
-        '
-        Me.btnAccept.BackColor = System.Drawing.Color.Transparent
-        Me.btnAccept.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btnAccept.Enabled = False
-        Me.btnAccept.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnAccept.ForeColor = System.Drawing.Color.Transparent
-        Me.btnAccept.Location = New System.Drawing.Point(0, 0)
-        Me.btnAccept.Name = "btnAccept"
-        Me.btnAccept.Size = New System.Drawing.Size(944, 35)
-        Me.btnAccept.TabIndex = 1
-        Me.btnAccept.UseVisualStyleBackColor = False
         '
         'tbCode
         '
@@ -204,13 +189,26 @@ Partial Class SplashScreen
         Me.tbCode.Size = New System.Drawing.Size(944, 13)
         Me.tbCode.TabIndex = 0
         '
+        'lblDateTime
+        '
+        Me.lblDateTime.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom), System.Windows.Forms.AnchorStyles)
+        Me.lblDateTime.BackColor = System.Drawing.Color.Transparent
+        Me.lblDateTime.Font = New System.Drawing.Font("Consolas", 20.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblDateTime.Location = New System.Drawing.Point(260, 188)
+        Me.lblDateTime.MaximumSize = New System.Drawing.Size(446, 54)
+        Me.lblDateTime.MinimumSize = New System.Drawing.Size(446, 54)
+        Me.lblDateTime.Name = "lblDateTime"
+        Me.lblDateTime.Size = New System.Drawing.Size(446, 54)
+        Me.lblDateTime.TabIndex = 8
+        Me.lblDateTime.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'SplashScreen
         '
-        Me.AcceptButton = Me.btnAccept
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(944, 532)
+        Me.Controls.Add(Me.lblDateTime)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.lblCourse)
         Me.Controls.Add(Me.lblName)
@@ -221,7 +219,7 @@ Partial Class SplashScreen
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "SplashScreen"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "SplashScreen"
+        Me.Text = "Student Entry System Splash Screen"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.pbLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel2.ResumeLayout(False)
@@ -246,5 +244,5 @@ Partial Class SplashScreen
     Friend WithEvents lblCourse As Label
     Friend WithEvents Panel1 As Panel
     Friend WithEvents tbCode As TextBox
-    Friend WithEvents btnAccept As Button
+    Friend WithEvents lblDateTime As Label
 End Class

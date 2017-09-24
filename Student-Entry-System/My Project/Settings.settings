@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="SQLConnectionString" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Server=localhost;Database=studententry;Uid=admin;Pwd=admin;</Value>
+      <Value Profile="(Default)">Server=localhost;Database=studententry;Uid=root;</Value>
     </Setting>
   </Settings>
 </SettingsFile>

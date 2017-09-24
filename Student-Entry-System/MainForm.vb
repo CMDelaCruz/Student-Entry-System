@@ -4,6 +4,7 @@ Public Class MainForm
 
     Public Shared username As String
     Public Shared adminID As String
+    Public Shared isMaster As Boolean
     Dim adminControls As MainControl
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -77,8 +78,10 @@ Public Class MainForm
         If result.Count > 0 Then
             'Open admin form if successful
             username = txtUsername.Text
-            changeForm("login")
             adminID = result(0)(7)
+            isMaster = If(result(0)(1).Equals("master"), True, False)
+            changeForm("login")
+
         Else
             MessageBox.Show("Invalid credentials!")
         End If

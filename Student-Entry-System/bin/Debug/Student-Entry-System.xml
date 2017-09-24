@@ -47,6 +47,16 @@ Student-Entry-System
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Student_Entry_System.My.Resources.Resources.Export_48px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Student_Entry_System.My.Resources.Resources.File_48px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Student_Entry_System.My.Resources.Resources.ID_Card_24px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -58,6 +68,21 @@ Student-Entry-System
 </summary>
 </member>
 <member name="P:Student_Entry_System.My.Resources.Resources.Lock_2_24px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Student_Entry_System.My.Resources.Resources.Print_48px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Student_Entry_System.My.Resources.Resources.Reset_48px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Student_Entry_System.My.Resources.Resources.Synchronize_48px">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

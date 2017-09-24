@@ -11,7 +11,7 @@ Public Class StudentInformationControl
     End Sub
 
     Public Sub InitializeStudentList()
-        Dim sql = "SELECT studentno AS 'Student ID', UPPER(CONCAT(COALESCE(`lastname`,''),',',COALESCE(`firstname`,''),' ',COALESCE(`middlename`,''))) As 'Name' FROM studentinformation"
+        Dim sql = "SELECT studentno AS 'Student ID', UPPER(CONCAT(COALESCE(`lastname`,''),',',COALESCE(`firstname`,''),' ',COALESCE(`middlename`,''))) As 'Name' FROM studentinformation ORDER BY `StudentNo` ASC"
         studentTable.DataSource = App.database.toDataset(sql).Tables(0)
         isinitialized = True
         studentTable.Update()
@@ -48,6 +48,7 @@ Public Class StudentInformationControl
             End If
 
             txtContactNo.Text = query(0)(10) & ""
+            studentPictureBox.ImageLocation = query(0)(11)
         Catch ex As Exception
 
         End Try
@@ -74,7 +75,7 @@ Public Class StudentInformationControl
         If isinitialized Then
             Try
                 Dim studentno = studentTable.SelectedRows(0).Cells(0).Value
-                Dim sql = "SELECT ID,StudentNo,LastName,FirstName,MiddleName,Course,Year,Section,Address,Gender,ContactNo FROM studentinformation WHERE StudentNo = ?"
+                Dim sql = "SELECT ID,StudentNo,LastName,FirstName,MiddleName,Course,Year,Section,Address,Gender,ContactNo,Image FROM studentinformation WHERE StudentNo = ?"
                 Dim params = New MySqlParameter() {
                     New MySqlParameter() With {.Value = studentno}
                 }
@@ -146,5 +147,9 @@ Public Class StudentInformationControl
             InitializeStudentList()
         Catch ex As Exception
         End Try
+    End Sub
+
+    Private Sub StudentInformationControl_VisibleChanged(sender As Object, e As EventArgs) Handles MyBase.VisibleChanged
+        InitializeStudentList()
     End Sub
 End Class

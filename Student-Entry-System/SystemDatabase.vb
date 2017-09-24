@@ -5,7 +5,6 @@ Public Class SystemDatabase
     Public connection As MySqlConnection
 
     Public Sub New(ByVal connectionString As String)
-
         connection = New MySqlConnection(connectionString)
     End Sub
 
@@ -119,7 +118,11 @@ Public Class SystemDatabase
             While reader.Read()
                 Dim list = New List(Of String)
                 For column As Integer = 0 To reader.FieldCount - 1
-                    list.Add(reader.GetValue(column))
+                    If Not IsDBNull(reader.GetValue(column)) Then
+                        list.Add(reader.GetValue(column))
+                    Else
+                        list.Add("")
+                    End If
                 Next
                 returnValue.Add(list)
             End While
@@ -181,5 +184,29 @@ Public Class SystemDatabase
             MessageBox.Show(ex.Message)
             Return False
         End Try
+    End Function
+
+    Public Function backupDatabase(path As String)
+        Dim command As MySqlCommand = New MySqlCommand
+        command.Connection = connection
+        If connection.State = ConnectionState.Closed Then
+            connection.Open()
+        End If
+
+        Dim backup As MySqlBackup = New MySqlBackup(command)
+        backup.ExportToFile(path)
+        connection.Close()
+    End Function
+
+    Public Function importDatabase(path As String)
+        Dim command As MySqlCommand = New MySqlCommand
+        command.Connection = connection
+        If connection.State = ConnectionState.Closed Then
+            connection.Open()
+        End If
+
+        Dim backup As MySqlBackup = New MySqlBackup(command)
+        backup.ImportFromFile(path)
+        connection.Close()
     End Function
 End Class

@@ -121,8 +121,11 @@
   <data name="Cancel_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Cancel_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="380747_268470246594653_135723565_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\380747_268470246594653_135723565_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\User_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,19 +133,31 @@
   <data name="ID Card_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ID Card_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\User_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\images.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="380747_268470246594653_135723565_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\380747_268470246594653_135723565_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bgform" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\bgform.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Lock 2_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Lock 2_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Edit_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\Edit_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Lock 2_24px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Images\Lock 2_24px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Export_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Export_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="File_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\File_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Print_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Print_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Reset_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Reset_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Synchronize_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Synchronize_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

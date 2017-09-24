@@ -33,6 +33,7 @@
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         MainForm.loadLoginMenu()
+        Application.Restart()
     End Sub
 
     Private Sub loadControl(ByVal userControl As UserControl, panel As Panel)
@@ -80,7 +81,11 @@
         studentInformation = New StudentInformationControl()
         studentRegistrar = New StudentRegistrationControl()
         adminManager = New AdminAccountManager()
-        masterControl = New MasterControl()
+
+        If MainForm.isMaster Then
+            masterControl = New MasterControl()
+            btnAdminTools.Visible = True
+        End If
 
         btnRecords.PerformClick()
     End Sub
